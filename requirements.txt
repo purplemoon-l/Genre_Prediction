@@ -1,0 +1,9 @@
+boto3
+Flask
+librosa
+s3transfer
+torch
+audioread
+soundfile==0.10.3.post1
+PyGObject
+

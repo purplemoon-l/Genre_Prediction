@@ -1,0 +1,26 @@
+This Repository is a Flask Server which takes input the of an s3 video file name(.mp4 or .mp3) and can predict the percentage of genres available in the video
+Possible Genres    
+	 	= [ 'blues',
+                'classical',
+                'country',
+                'disco',
+                'hiphop',
+                'jazz',
+                'metal',
+                'pop',
+                'reggae',
+                'rock'  ]
+
+Instructions to Run the Flask APP
+1. Make sure you give your access key and access password in the config file(./model/config.py)
+2. Run the Docker file in a virtual environment(librosa causes few issues and if not installed in the correct order does not support .mp4)
+3. Run get_genre.py 
+4. Open localhost and give your input as localhost:5000/audiofilename?audiopath = "s3 filename"
+5. You should get the output in the browser
+
+Output of the model is a list of Dictionary
+Example :  {"output": {"pop": 77.77777777777779,"blues": 5.555555555555555,"rock": 5.555555555555555,"disco":5.555555555555555,"country":5.555555555555555}}
+
+Original Repositories:
+https://github.com/cetinsamet/music-genre-classification
+https://github.com/XiplusChenyu/Musical-Genre-Classification
