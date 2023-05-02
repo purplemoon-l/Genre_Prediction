@@ -14,10 +14,10 @@ Possible Genres
 Instructions to Run the Flask APP
 1. Make sure you give your access key and access password in the config file(./model/config.py)
 2. Download the weights file from https://drive.google.com/file/d/1zrfwFkbf2KeIvAze-VKL3VcjZnGYCvVE/view?usp=share_link and copy it and save it as .model/net.py
-2. Run the Docker file in a virtual environment(librosa causes few issues and if not installed in the correct order does not support .mp4)
-3. Run get_genre.py 
-4. Open localhost and give your input as localhost:5000/audiofilename?audiopath = "s3 filename"
-5. You should get the output in the browser
+3. Run the Docker file in a virtual environment(librosa causes few issues and if not installed in the correct order does not support .mp4)
+4. Run get_genre.py 
+5. Open localhost and give your input as localhost:5000/audiofilename?audiopath = "s3 filename"
+6. You should get the output in the browser
 
 Output of the model is a list of Dictionary
 Example :  {"output": {"pop": 77.77777777777779,"blues": 5.555555555555555,"rock": 5.555555555555555,"disco":5.555555555555555,"country":5.555555555555555}}
